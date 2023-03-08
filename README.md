@@ -34,7 +34,6 @@
       - Current handshake: one-way (not ideal); DS waits for sign-up message from number of assigned aggs before listening for requests
       - DS owns unordered_map<std::string, std::unordered_map<std::string, std::vector<long double>>>
         - Current set-up is aggset_name -> symbol -> values (maybe not ideal, symbol -> aggset_name -> values would help with unique symbol lookup)
-        - sorted vec of unique symbols: each new one added the first time it shows up in req
         - set of unique symbols for lookup
         
         ((
