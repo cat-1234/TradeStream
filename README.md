@@ -19,13 +19,13 @@
     - Agg
       - (owns unique_ptrs to ZMQSub - recv trades from TradeStreamer; ZMQPush, ZMQPair to push req to connect, pull initial value, and push new value to DB)
     - ZMQHandler (Handle around ZMQ node setting up context and sockets and handling cleanup)
-      - TCPZMQHandler (Uses tcp protocol (necessary for completely separate threads - eventual extension to multiprocess))
+      - TCPZMQHandler (Uses tcp protocol (necessary for completely separate threads - eventual extension to UDP))
         - TCPZMQPull
         - TCPZMQPush
         - TCPZMQPub
         - TCPZMQSub
         - TCPZMQPair
-        - TCPZMQPull/PushMulti (different connections modes for queuing)
+        - TCPZMQPull/PushMulti (different connection modes for queuing)
         - TCPZMQPair for one-to-one
         - (other set-ups would be much more ideal; still more to do)
     - DataStore
