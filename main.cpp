@@ -51,7 +51,7 @@
 //    agg.recv();
 //}
 
-//void run_maxrangeagg(const int& n)
+//void run_maxrangeagg(int n)
 //{
 //    auto fac = std::make_shared<TCPZMQFactory>();
 //    auto szr = std::make_unique<VarChunksSerializer>(',');
@@ -64,7 +64,7 @@
 //    agg.recv();
 //}
 
-//void run_maxagg(const int& n)
+//void run_maxagg(int n)
 //{
 //    auto fac = std::make_shared<TCPZMQFactory>();
 //    auto szr = std::make_unique<VarChunksSerializer>(',');
@@ -88,7 +88,7 @@
 //    ds.recv();
 //}
 
-//void run_aggstream(const std::string& s, const std::vector<std::string> aggnames)
+//void run_aggstream(const std::string& s, const std::vector<std::string>& aggnames)
 //{
 //    auto writer = std::make_unique<CSVFileWriter>(s);
 //    auto szr = std::make_unique<VarChunksSerializer>(',');
@@ -98,7 +98,7 @@
 //    astr.stream();
 //}
 
-//void parse_tokens(const std::string& str, std::vector<std::string>& vec, const char& delim)
+//void parse_tokens(const std::string& str, std::vector<std::string>& vec, char delim)
 //{
 //    std::stringstream sstrm;
 //    for (int i = 0; i < str.size(); ++i)
